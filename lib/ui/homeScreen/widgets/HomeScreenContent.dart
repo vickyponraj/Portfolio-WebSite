@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -8,16 +7,11 @@ import 'package:flutter_web_001/values/Strings.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreenContainer extends StatelessWidget {
-/*
 
- final bool isMobile;
-
-  HomeScreenContainer(this.isMobile);
-*/
 
   static TextStyle display1 = TextStyle(
     fontFamily: GoogleFonts.carterOne().fontFamily,
-    fontSize: 42,
+    fontSize: 48,
     fontWeight: FontWeight.w400,
     color: AppColors.white,
   );
@@ -26,7 +20,7 @@ class HomeScreenContainer extends StatelessWidget {
     fontFamily: GoogleFonts.breeSerif().fontFamily,
     fontSize: 16,
     fontWeight: FontWeight.bold,
-    color: AppColors.white,
+    color: AppColors.textColorSecondary,
   );
 
   List<Widget> pageContents(maxWidth) {
@@ -38,10 +32,6 @@ class HomeScreenContainer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                Strings.labelHello,
-                style: displaySmall,
-              ),
               Text(
                 Strings.appTitle,
                 style: display1,
@@ -58,15 +48,6 @@ class HomeScreenContainer extends StatelessWidget {
       ClipRRect(
           borderRadius: BorderRadius.circular(maxWidth/2),
           child: Image.asset(AppAssets.profilePic, width: maxWidth / 2))
-    ];
-  }
-
-  List<Widget> rightContents() {
-    return <Widget>[
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [Image.asset(AppAssets.profilePic)],
-      )
     ];
   }
 

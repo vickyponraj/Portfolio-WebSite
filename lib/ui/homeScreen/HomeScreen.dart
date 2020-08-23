@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           color: AppColors.appPrimaryColor,
           child: Column(
             children: [
-              NavBar(),
+//              NavBar(),
               Spacer(flex: 1,),
               HomeScreenContainer(),
               Spacer(),

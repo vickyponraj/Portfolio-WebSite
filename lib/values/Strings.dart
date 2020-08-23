@@ -18,5 +18,15 @@ class Strings{
   static String urlFacebook = "https://www.facebook.com/vickypsvs";
   static String labelEmail = "Email";
   static String urlEmail = "mailto:tovickyoff@gmail.com";
+  static String labelLetsTalk = "Let's Talk";
+  static String labelFewPlacesIHaveWorked = "A FEW OF THE PLACES I HAVE WORKED";
+  static String labelMithrAi = "MithrAI";
+  static String labelOptisol = "Optisol";
+  static String labelAnubavam = "Anubavam";
+  static String urlMithrAi = "https://www.mithrai.com/";
+  static String urlOptisol = "https://www.optisolbusiness.com/";
+  static String urlAnubavam = "https://www.anubavam.com/";
+  static String labelWorks = "WORKS";
+  static String labelMyWorks = "Few of My Highlighted Works";
 
 }

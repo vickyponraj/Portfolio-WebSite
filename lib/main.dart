@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_001/ui/homeScreen/HomeScreen.dart';
+import 'package:flutter_web_001/ui/homeScreen/LandingPage.dart';
 import 'package:flutter_web_001/ui/splashScreen/SplashScreen.dart';
 
 void main() {
@@ -23,13 +24,13 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.black,
+        primaryColor: Colors.black,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: LandingPage(),
     );
   }
 }
