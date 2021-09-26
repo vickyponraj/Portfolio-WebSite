@@ -28,6 +28,7 @@
 .flutter-plugins-dependencies
 .firebaserc
 .packages
+pubspec.lock
 .pub-cache/
 .pub/
 /build/
