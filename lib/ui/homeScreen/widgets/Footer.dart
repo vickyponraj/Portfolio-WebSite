@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_001/data/model/FooterItemData.dart';
-import 'package:flutter_web_001/values/AppAssets.dart';
-import 'package:flutter_web_001/values/Colors.dart';
-import 'package:flutter_web_001/values/Strings.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vignesh_portfolio_2021/data/model/FooterItemData.dart';
+import 'package:vignesh_portfolio_2021/values/AppAssets.dart';
+import 'package:vignesh_portfolio_2021/values/AppStrings.dart';
+import 'package:vignesh_portfolio_2021/values/Colors.dart';
 class Footer extends StatelessWidget {
 
-  final FooterItemData faceBook = new FooterItemData(Strings.labelFacebook,AppAssets.facebook,Strings.urlFacebook);
-  final FooterItemData email = new FooterItemData(Strings.labelEmail,AppAssets.email,Strings.urlEmail);
-  final FooterItemData linkedIn = new FooterItemData(Strings.labelLinkedIn,AppAssets.linkedIn,Strings.urlLinkedIn);
+  final FooterItemData faceBook = new FooterItemData(AppStrings.labelFacebook,AppAssets.facebook,AppStrings.urlFacebook);
+  final FooterItemData email = new FooterItemData(AppStrings.labelEmail,AppAssets.email,AppStrings.urlEmail);
+  final FooterItemData linkedIn = new FooterItemData(AppStrings.labelLinkedIn,AppAssets.linkedIn,AppStrings.urlLinkedIn);
 
 
 

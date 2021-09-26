@@ -1,5 +1,5 @@
 
-class Strings{
+class AppStrings{
 
   static String appName = "Vignesh Portfolio";
   static String appTitle = "Vignesh Ponraj";

@@ -8,5 +8,6 @@ class AppAssets{
   static String facebook = assetsPath+"facebook.svg";
   static String linkedIn = assetsPath+"linkedin.svg";
   static String email = assetsPath+"mail.svg";
+  static String portfolioLogo = "assets/logo.svg";
 
 }

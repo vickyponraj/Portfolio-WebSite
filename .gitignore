@@ -29,6 +29,7 @@
 .firebaserc
 .packages
 pubspec.lock
+.run/
 .pub-cache/
 .pub/
 /build/
@@ -44,3 +45,4 @@ app.*.map.json
 
 # Exceptions to above rules.
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+/.run/Web Release.run.xml

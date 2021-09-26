@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_web_001/values/AppAssets.dart';
-import 'package:flutter_web_001/values/Colors.dart';
-import 'package:flutter_web_001/values/Strings.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vignesh_portfolio_2021/values/AppAssets.dart';
+import 'package:vignesh_portfolio_2021/values/AppStrings.dart';
+import 'package:vignesh_portfolio_2021/values/Colors.dart';
 
 class HomeScreenContainer extends StatelessWidget {
 /*
@@ -37,15 +37,15 @@ class HomeScreenContainer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                Strings.labelHello,
+                AppStrings.labelHello,
                 style: displaySmall,
               ),
               Text(
-                Strings.appTitle,
+                AppStrings.appTitle,
                 style: display1,
               ),
               Text(
-                Strings.labelProfileDesc,
+                AppStrings.labelProfileDesc,
                 style: displaySmall,
               )
             ],

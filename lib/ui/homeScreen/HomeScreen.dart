@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_001/ui/homeScreen/widgets/Footer.dart';
-import 'package:flutter_web_001/ui/homeScreen/widgets/HomeScreenContent.dart';
-import 'package:flutter_web_001/ui/homeScreen/widgets/NavBar.dart';
-import 'package:flutter_web_001/values/Colors.dart';
 
+import 'widgets/Footer.dart';
+import 'widgets/HomeScreenContent.dart';
+import 'widgets/NavBar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -11,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          color: AppColors.appPrimaryColor,
+          color: Theme.of(context).backgroundColor,
           child: Column(
             children: [
               NavBar(),

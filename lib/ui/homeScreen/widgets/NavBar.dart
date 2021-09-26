@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_001/values/Colors.dart';
-import 'package:flutter_web_001/values/Strings.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:vignesh_portfolio_2021/core/navigation/navigation_router.dart';
+import 'package:vignesh_portfolio_2021/values/AppAssets.dart';
+import 'package:vignesh_portfolio_2021/values/AppStrings.dart';
+import 'package:vignesh_portfolio_2021/values/Colors.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,18 +39,22 @@ class DesktopNavBar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(padding: EdgeInsets.all(20), child: Text(Strings.appLogoTitle, style: display1)),
+          Padding(padding: EdgeInsets.all(20), child: SvgPicture.asset(AppAssets.portfolioLogo,height: 38.h)),
           Row(
             children: [
-              MenuItem(Strings.labelHome),
+              MenuItem(AppStrings.labelHome,onClick: (){
+                Navigator.of(context).pushNamed(NavigationRouter.SECOND_PAGE);
+              },),
               SizedBox(
                 width: 20,
               ),
-              MenuItem(Strings.labelAbout),
+              MenuItem(AppStrings.labelAbout,onClick: (){
+
+              },),
               SizedBox(
                 width: 20,
               ),
-              MenuItem(Strings.labelPortfolio),
+              MenuItem(AppStrings.labelPortfolio),
               SizedBox(
                 width: 20,
               ),
@@ -76,19 +83,19 @@ class MobileNavBar extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Padding(padding: EdgeInsets.all(20), child: Text(Strings.appLogoTitle, style: display1)),
+          Padding(padding: EdgeInsets.all(20), child: Text(AppStrings.appLogoTitle, style: display1)),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MenuItem(Strings.labelHome),
+              MenuItem(AppStrings.labelHome),
               SizedBox(
                 width: 20,
               ),
-              MenuItem(Strings.labelAbout),
+              MenuItem(AppStrings.labelAbout),
               SizedBox(
                 width: 20,
               ),
-              MenuItem(Strings.labelPortfolio),
+              MenuItem(AppStrings.labelPortfolio),
               SizedBox(
                 width: 20,
               ),
@@ -102,8 +109,8 @@ class MobileNavBar extends StatelessWidget {
 
 class MenuItem extends StatelessWidget {
   final String menuTitle;
-
-  MenuItem(this.menuTitle);
+  final Function()? onClick;
+  MenuItem(this.menuTitle,{this.onClick});
 
   static TextStyle menuTextStyle = TextStyle(
     fontFamily: GoogleFonts.carterOne().fontFamily,
@@ -120,7 +127,7 @@ class MenuItem extends StatelessWidget {
         menuTitle,
         style: menuTextStyle,
       ),
-      onTap: () {},
+      onTap: onClick,
     );
   }
 }
