@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_web_001/data/model/FooterItemData.dart';
 import 'package:flutter_web_001/values/AppAssets.dart';
 import 'package:flutter_web_001/values/Colors.dart';

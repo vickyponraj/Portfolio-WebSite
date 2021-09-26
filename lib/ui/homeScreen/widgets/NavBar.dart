@@ -126,7 +126,7 @@ class MenuItem extends StatelessWidget {
 }
 
 class AppButton extends StatelessWidget {
-  String menuTitle;
+  final String menuTitle;
 
   AppButton(this.menuTitle);
 
